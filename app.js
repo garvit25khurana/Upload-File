@@ -106,7 +106,7 @@ app.delete('/files/:id', (req,res) => {
     {
       return res.status(404).json({err: err});
     }
-    redirect('/');
+    res.redirect('/');
   })
 })
 {

@@ -28,7 +28,7 @@
             <div class="card mb-3">
                 <div class="card-body text-center ">
                     <h4 class="card-title"><%=  file.filename  %></h4><a class="card-link btn btn-block btn-primary" href="/files/<%= file._id %>">Download</a>
-                    <form action="/files/<%= file._id %>?_method=DELETE " >
+                    <form method="POST" action="/files/<%= file._id %>?_method=DELETE" >
                         <button class="btn mt-1 btn-danger btn-block">Delete</button>
                     </form>
                 </div>
